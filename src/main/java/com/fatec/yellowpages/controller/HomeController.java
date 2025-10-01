@@ -19,7 +19,6 @@ import java.util.Map;
 @Tag(name = "Home", description = "The endpoint retorne the home")
 public class HomeController {
 
-
     @Operation(summary = "Home",
         responses = {
             @ApiResponse(description = "Hello", responseCode = "200", content = @Content(
@@ -31,7 +30,6 @@ public class HomeController {
 
     @GetMapping
     public ResponseEntity<Map<String, String>>  home() {
-
         Map<String, String> response = Map.of(
                 "message", "Ola",
                 "status", "ta rodando pai"
