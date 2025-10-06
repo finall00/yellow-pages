@@ -2,6 +2,7 @@
 
 ## Pré-requisitos
 
+- Linux (Wsl no Windows - [Veja como instalar aqui](./docs/WslAndDocker.md))
 - Docker 20.10+
 - Docker Compose 2.0+
 - Git
