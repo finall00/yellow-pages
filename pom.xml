@@ -66,6 +66,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>11.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
+            <version>11.0.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -94,6 +104,24 @@
                     </excludes>
                 </configuration>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.flywaydb</groupId>-->
+<!--                <artifactId>flyway-parent</artifactId>-->
+<!--                <version>11.7.2</version>-->
+<!--                <configuration>-->
+<!--                    <url>jdbc:postgresql://localhost:5432/yellow-db</url>-->
+<!--                    <user>postgres</user>-->
+<!--                    <password>123456</password>-->
+<!--                    <schemas>-->
+<!--                        <schema>public</schema>-->
+<!--                    </schemas>-->
+<!--                        <cleanDisabled>false</cleanDisabled>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+
+
+
         </plugins>
     </build>
 
