@@ -2,6 +2,7 @@
 
 ## Pré-requisitos
 
+- Linux (Wsl no Windows - [Veja como instalar aqui](./docs/WslAndDocker.md))
 - Docker 20.10+
 - Docker Compose 2.0+
 - Git
@@ -14,12 +15,14 @@
 ## Iniciando com Docker 
 
 ### 1. Clone o repositório
+
 ```bash
-git clone <url-do-repositorio>
+git clone git@github.com:finall00/yellow-pages.git
 cd yellow-pages
 ```
 
 ### 2. Configure as variáveis de ambiente
+
 ```bash
 cp .env.example .env
 ```
@@ -51,9 +54,10 @@ docker-compose up -d --build
     - **Usuário**: postgres
     - **Senha**: \<Password>
     - **Base de dados**: yellow-db
-```
+
 
 ### 3. Execute a aplicação
+
 ```bash
 # Com Maven
 mvn spring-boot:run
